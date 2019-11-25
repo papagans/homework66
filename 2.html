@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2</title>
+</head>
+<body>
+	<div class="element">Element 1</div>
+	<div class="element">Element 2</div>
+	<div class="element">Element 3</div>
+	<div class="element">Element 4</div>
+	<div class="element">Element 5</div>
+	<div class="element">Element 6</div>
+
+	<script type="text/javascript">
+		element = document.querySelectorAll(".element");
+		for (i = 0; i < element.length; i++){
+			if (i < 3) {
+			element[i].style.color = "red";
+			}else {
+			element[i].style.color = "green";
+			}
+		}
+	</script>
+</body>
+</html>

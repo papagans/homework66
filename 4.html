@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4</title>
+</head>
+<body>
+	<div id="container"></div>
+	<input id="add-item-btn" type="button" value="+" onclick="pashArman()">
+		<script type="text/javascript">
+			var i = 1;
+			function pashArman() {
+    			div = document.createElement('div');
+				div.className = 'element';
+				text = document.createTextNode("Element " + i.toString());      
+				div.appendChild(text);                        
+				document.getElementById("container").appendChild(div);
+				i += 1;
+				var letters = ['red', 'green', 'purple', 'blue', 'yellow'];
+  				var cvet = '';
+    			cvet += letters[Math.floor(Math.random() * 5)];
+    			div.style.color = cvet;
+    			console.log(cvet)
+				
+}
+		</script>
+</body>
+</html>
